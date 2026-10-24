@@ -1,9 +1,27 @@
-function App() {
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Features from './components/Features'
+import TreatmentCatalog from './components/TreatmentCatalog'
+import HowToBook from './components/HowToBook'
+import ServiceArea from './components/ServiceArea'
+import FAQ from './components/FAQ'
+import Footer from './components/Footer'
+import FloatingWhatsApp from './components/FloatingWhatsApp'
+
+export default function App() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-stone-50 text-stone-800">
-      <h1 className="text-3xl font-semibold">Dahayu Home Spa</h1>
+    <div className="min-h-screen bg-linen text-moka flex flex-col font-sans selection:bg-caramel-light selection:text-caramel-dark">
+      <Navbar />
+      <main className="grow">
+        <Hero />
+        <Features />
+        <TreatmentCatalog />
+        <HowToBook />
+        <ServiceArea />
+        <FAQ />
+      </main>
+      <Footer />
+      <FloatingWhatsApp />
     </div>
   )
 }
-
-export default App

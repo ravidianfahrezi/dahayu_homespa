@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-linen: #FAF6F0;
+  --color-linen-warm: #F4EDE2;
+  --color-nude-card: #F8F3ED;
+  --color-nude-border: #E8DDCE;
+  --color-moka: #2D1D16;
+  --color-moka-soft: #635047;
+  --color-moka-light: #947E73;
+  --color-caramel: #C87D4A;
+  --color-caramel-dark: #B16837;
+  --color-caramel-light: #F7EBE2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
